@@ -58,6 +58,8 @@ while True:
             pyautogui.click()
             pyautogui.sleep(1)
     cv2.imshow("Eye control mouse", frame)
+    
+    #to terminate application
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 cam.release()
