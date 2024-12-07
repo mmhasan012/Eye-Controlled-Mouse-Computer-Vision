@@ -11,7 +11,6 @@ screen_w, screen_h = pyautogui.size()
 screen_x = 200  
 screen_y = 200
 while True:
-
     _, frame = cam.read()
     frame = cv2.flip(frame, 1)
     rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
